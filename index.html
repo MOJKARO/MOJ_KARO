@@ -54,7 +54,90 @@
     <div class="arrows">👇</div>
 </div>
 
+<div style="text-align:center;">
 
+    <!-- MOVING DOWN ARROW -->
+    <div style="
+        font-size:45px;
+        font-weight:bold;
+        animation: arrowUpDown 0.7s ease-in-out infinite;
+        margin-bottom:5px;
+    ">
+        👇
+    </div>
+
+    <!-- ANIMATED CLICK BUTTON -->
+    <div style="
+        display:inline-block;
+        background:linear-gradient(135deg, #FFD700, #FF8C00, #FFD700);
+        background-size:200% 200%;
+        color:black;
+        padding:12px 25px;
+        border-radius:12px;
+        font-size:20px;
+        font-weight:bold;
+        box-shadow:0 0 15px rgba(255,165,0,0.8);
+        animation: buttonPulse 1.2s ease-in-out infinite,
+                   backgroundMove 3s ease infinite;
+    ">
+        <span style="
+            display:inline-block;
+            animation:textBounce 1s ease-in-out infinite;
+        ">
+            CLICK TO PLAY MOJ
+        </span>
+    </div>
+
+</div>
+
+
+<style>
+
+@keyframes arrowUpDown {
+    0%, 100% {
+        transform:translateY(0);
+    }
+
+    50% {
+        transform:translateY(12px);
+    }
+}
+
+@keyframes buttonPulse {
+    0%, 100% {
+        transform:scale(1);
+    }
+
+    50% {
+        transform:scale(1.08);
+    }
+}
+
+@keyframes textBounce {
+    0%, 100% {
+        transform:translateY(0);
+    }
+
+    50% {
+        transform:translateY(-3px);
+    }
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position:0% 50%;
+    }
+
+    50% {
+        background-position:100% 50%;
+    }
+
+    100% {
+        background-position:0% 50%;
+    }
+}
+
+</style>
 
         
 <h1><font color="black" face="monoton" size="20" color="black"> CLICK TO PLAY MOJ </font></h1>        
