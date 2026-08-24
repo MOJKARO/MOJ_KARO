@@ -87,7 +87,17 @@
 
         <!-- TEXT -->
         <span style="
-            animation:textPulse 1s infinite;
+            display:inline-block;
+    font-size:40px;
+    font-weight:900;
+    letter-spacing:2px;
+    color:#FFFFFF;
+    text-shadow:
+        0 0 5px #FFFFFF,
+        0 0 10px #FFD700,
+        0 0 20px #FF4500,
+        0 0 35px #FF0000;
+    animation:textBigPulse 1s ease-in-out infinite;
         ">
             CLICK TO PLAY MOJ
         </span>
@@ -123,12 +133,12 @@
     }
 }
 
-@keyframes textPulse {
+@keyframes textbigPulse {
     0%,100% {
         transform:scale(1);
     }
     50% {
-        transform:scale(1.08);
+        transform:scale(1.12);
     }
 }
 
